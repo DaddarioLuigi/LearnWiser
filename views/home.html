@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LearnWiser App Interface</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 font-sans leading-normal tracking-normal">
+
+<style>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f3f4f6; /* Set your desired background color */
+    }
+    .form-container {
+      position: fixed;
+      bottom: 20px; /* Adjust this value as per your preference */
+      left: 0;
+      right: 0;
+      text-align: center;
+      background-color: #ffffff; /* Set your desired background color */
+      border-radius: 10px; /* Adjust the radius as needed */
+      padding: 20px;
+      box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1); /* Add shadow for a better look */
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    .form-control-file {
+      /* Add your custom styles for file input if needed */
+    }
+    .btn-upload {
+      background-color: #6b46c1; /* Set your desired button color */
+      color: #ffffff; /* Set text color */
+      border: none;
+      border-radius: 9999px; /* Adjust the radius as needed */
+      padding: 10px 20px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .btn-upload:hover {
+      background-color: #553c9a; /* Change color on hover */
+    }
+  </style>
+</style>
+<nav class="bg-purple-600 p-4">
+  <a class="navbar-brand" href="#">
+    <img class="img-fluid" src="../static/Learn (1).png" alt="Your Logo" style="height: 70px;"> <!-- Adjust the height as needed -->
+  </a>
+</nav>
+
+<main class="px-6 py-4">
+    <div class="bg-white p-6 rounded-lg shadow-lg">
+        <div class="flex flex-col items-center">
+            <img style="width: 100px;" src="../static/mascot.jpg" alt="Richard Feynman character" class="w-24 h-24 rounded-full">
+            <button class="bg-transparent border-none text-gray-800 mt-2">Richard Feynman</button>
+        </div>
+        <div class="text-center mt-4">
+            <p class="text-lg">Hey There! Richard Feynman, but you can call me FeynAI. See, together, we can take any problem and break it down into bite-sized pieces.</p>
+            <p class="text-gray-700 mt-2">So, why don't you feed FeynAI whatever you're working on? Textbook, lecture notes, the whole shebang! The more you give it, the better it can help you truly understand.</p>
+            <p class="text-purple-600 mt-4 font-bold">Alright, let's get learning!</p>
+        </div>
+    </div>
+    <div class="form-container">
+      <form action="#" method="post" enctype="multipart/form-data">
+        <div class="form-group">
+          <label for="fileUpload">Choose File:</label>
+          <input type="file" class="form-control-file" id="fileUpload" name="fileUpload">
+        </div>
+        <button type="submit" class="btn-upload">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6 inline-block align-middle">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M12 4v16m8-8H4"/>
+          </svg>
+        </button>
+      </form>
+    </div>
+</main>
+
+</body>
+</html>

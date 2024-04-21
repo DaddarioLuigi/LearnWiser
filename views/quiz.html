@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz App</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+  background-color: #1C1C6B; /* Updated to dark blue from the image */
+}
+
+.navbar-custom {
+  background-color: #B6D12B; /* Updated to yellow-green from the image */
+}
+
+.btn-custom {
+  background-color: #B6D12B; /* Updated to yellow-green from the image */
+  color: white;
+  border-radius: 4px; /* Adjusted for slight rounding */
+  box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+}
+
+.btn-custom:hover {
+  background-color: #9DB024; /* A darker yellow-green on hover */
+}
+
+.card {
+  margin-top: 20px;
+}
+
+.container {
+  background-color: white;
+  border-radius: 8px;
+  margin-top: 20px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,.15);
+}
+
+.btn-custom {
+  background-color: #B6D12B; /* The yellow-green background color */
+  color: black; /* Black text */
+  border-radius: 50px; /* Very rounded edges to make the buttons capsule-shaped */
+  box-shadow: none; /* Removing the shadow for a cleaner look like the image */
+}
+
+.btn-custom:hover {
+  background-color: #AEC021; /* A slightly darker yellow-green for the hover state */
+  color: black; /* Maintaining the black text on hover */
+  border: 3px solid black; /* Keeping the bold black border on hover */
+}
+
+/* It's a good idea to remove duplicate styles to keep your CSS clean */
+
+    .navbar-custom {
+      background-color: #6b46c1; /* Purple color for the navbar */
+    }
+
+    .btn-custom {
+      background-color: #C5EF07; /* Purple color for the buttons */
+      color: black;
+      border-radius: 2px;
+    }
+
+    .btn-custom:hover {
+      background-color: #C5EF07; /* A darker purple on hover */
+    }
+
+    .card {
+      margin-top: 20px; /* Spacing above the card */
+    }
+
+    .container {
+      background-color: white; /* Set the main container to white */
+      border-radius: 8px; /* Rounded corners */
+      margin-top: 20px; /* Space from the top */
+      padding: 20px; /* Padding inside the container */
+      box-shadow: 0 0 10px rgba(0,0,0,.15); /* Shadow for depth */
+    }
+  </style>
+  <style>
+  
+
+    .btn-custom:hover {
+      background-color: #C5EF07; /* A darker purple on hover */
+    }
+
+    .container {
+      padding-top: 50px; /* Spacing at the top */
+    }
+
+    .card {
+      margin-top: 20px; /* Spacing above the card */
+    }
+  </style>
+</head>  
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
+    <nav class="bg-purple-600 p-4">
+      <a class="navbar-brand" href="#">
+        <img class="img-fluid" src="../static/Learn (1).png" alt="Your Logo" style="height: 70px;"> <!-- Adjust the height as needed -->
+      </a>
+    </nav>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+
+ 
+    </div>
+  </nav>
+<div class="container text-center">
+  <div class="flex flex-col items-center">
+    <img style="width: 150px;" src="../static/mascot2.jpg" alt="Richard Feynman character" class="w-24 h-24 rounded-full">
+</div>
+  
+  <!-- Question -->
+  <div class="card">
+    <div style="background-color: #b36dff;" class="card-body">
+      <h5 style="color: white;" class="card-title">{{domande[0]}}</h5>
+    </div>
+  </div>
+
+  <!-- Response Choices as Buttons -->
+  <div class="row mt-3">
+    <div class="col-md-6 mb-3">
+      <a href="/feedback" class="btn btn-custom btn-block">{{risposte[0][0]}}</a>
+    </div>
+    <div class="col-md-6 mb-3">
+      <a href="/feedback" class="btn btn-custom btn-block">{{risposte[0][1]}}</a>
+    </div>
+    <div class="col-md-6 mb-3">
+      <a href="/feedback" class="btn btn-custom btn-block">{{risposte[0][2]}}</a>
+    </div>
+    <div class="col-md-6">
+      <a href="/feedback" class="btn btn-custom btn-block">{{risposte[0][3]}}</a>
+    </div>
+  </div>
+
+</div>
+
+<!-- Bootstrap JS (Optional if you need JavaScript) -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
