@@ -1,0 +1,35 @@
+/* Main body styling */
+body {
+  background-color: #3f3cbb; /* Purple background */
+  font-family: "Lekton", sans-serif; /* Lekton-like font, use system default if not available */
+  color: white; /* White text color for contrast */
+}
+
+/* Streamlit components and layout adjustments */
+.stButton > button {
+  background-color: #8a81d6; /* Lighter purple for buttons */
+  color: white; /* White text on buttons */
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-family: "Meera Inimai", sans-serif; /* Meera Inimai-like font */
+}
+
+/* Streamlit header adjustments */
+header {
+  background-color: #3f3cbb; /* Purple background */
+}
+
+/* Adjustments for markdown */
+.markdown-text-container {
+  font-family: "Meera Inimai", sans-serif; /* Meera Inimai-like font for text */
+}
+
+/* Container styling */
+.css-1d391kg {
+  background-color: #5e5abe; /* Lighter purple background for containers */
+  padding: 2rem;
+  border-radius: 0.5rem;
+}
+
+/* Custom styles for other Streamlit components can be added here */
